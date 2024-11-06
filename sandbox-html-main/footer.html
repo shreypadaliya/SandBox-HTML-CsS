@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <div class="footmaincom">
+        <footer class="footer">
+            <div class="container footmainwrap">
+                <!-- Column 1 -->
+                <div class="footer-column">
+                    <div><img src="images/logo-light.png.png" alt=""></div>
+                    <p class="foot1info">&copy; 2023 Sandbox.<br>All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./images/Nav → Link.png" alt=""></i></a>
+                        <a href="#"><img src="./images/Nav → Link (1).png" alt=""></a>
+                        <a href="#"><img src="./images/Nav → Link (2).png" alt=""></a>
+                        <a href="#"><img src="./images/Nav → Link (3).png" alt=""></a>
+                        <a href="#"><img src="./images/Nav → Link (4).png" alt=""></a>
+                    </div>
+                </div>
+    
+                <!-- Column 2 -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <p class="foot1info2">Moonshine St. 14/05<br>Light City, London,<br>United Kingdom</p>
+                    <p class="foot1info2">info@email.com<br>00 123 456 79 00</p>
+                </div>
+    
+                <!-- Column 3 -->
+                <div class="footer-column">
+                    <h3>Learn More</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 4 -->
+                <div class="footer-column">
+                    <h3>Our Newsletter</h3>
+                    <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                    <!-- <form action="#">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">Join</button>
+                    </form> -->
+                    <form action="#" method="post" onsubmit="return validateForm()">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
