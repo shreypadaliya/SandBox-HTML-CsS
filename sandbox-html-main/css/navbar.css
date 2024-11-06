@@ -30,13 +30,18 @@
   position: relative;
   cursor: pointer;
   user-select: none;
+  
+}
+.navlinkholdatag{
+  text-decoration: none;
   font-weight:600;
   font-size:17px ;
   line-height: 28.9px;
   color:#343F52 ;
+  cursor: pointer;
 }
 
-.navlinkhold:hover {
+.navlinkholdatag:hover {
   color: #747ED1; 
   cursor: pointer;
 }

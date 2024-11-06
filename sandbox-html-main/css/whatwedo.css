@@ -107,13 +107,14 @@
   border: #e9eaf8;
   border-radius: 100px;
   margin-top: 18.96px;
+  transition: transform 0.3s ease; 
 }
 .morebutton:hover{
   background-color:#747ed1 ;
   color: #e9eaf8;
   scale: (1.01);
-  transform: scale(1.05);
-  transition: transform 0.3s ease; 
+  /* transform: scale(1.05); */
+  
 }
 
 .webdesignimg{

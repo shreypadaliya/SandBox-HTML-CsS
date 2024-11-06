@@ -26,6 +26,7 @@
   background: linear-gradient(to bottom, #542461, #332487);
   opacity: 0.5;
   z-index: 1;
+  border-radius: 20px;
 }
 
 .homesemimain * {

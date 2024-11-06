@@ -234,3 +234,25 @@
     font-size: 12px; 
   }
 }
+
+
+.responsive-video {
+  position: relative;
+  width: 100%;
+  max-width: 1070px;
+  /* Aspect ratio padding for 1070px x 601.88px (16:9 aspect ratio approximately) */
+  padding-top: 56.25%; /* 601.88 / 1070 ≈ 0.5625 or 56.25% */
+}
+
+.responsive-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.wprocmainimgsemi1 {
+  max-width: 100%;
+}
